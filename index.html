@@ -67,9 +67,11 @@
         <section id="order-form-section" class="order-form-section">
             <div class="container">
                 <h2>Formulir Pesanan</h2>
-                <a href="#hubungi-kami" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</a>
                 <form id="orderForm">
                     <div class="form-group">
+                        <a href="#hubungi-kami">
+    <button id="checkoutBtn" class="btn primary-btn"><i class="fas fa-map-marker-alt"></i> Checkout</button>
+</a>
                         <label for="customerName">📄Nama Kamu:</label>
                         <input type="text" id="customerName" placeholder="Nama Kamu" required>
                     </div>
@@ -134,7 +136,7 @@
                 </ul>
             <div class="cart-summary-modal">
                 <p>Total: <span id="modal-cart-total">Rp 0</span></p>
-                <button id="checkoutBtn" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+                <button id="checkoutBtn" class="btn primary-btn"><i class="fas fa-map-marker-alt"></i> Checkout</button>
             </div>
         </div>
     </div>
