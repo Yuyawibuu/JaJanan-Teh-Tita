@@ -27,6 +27,99 @@ body {
     scroll-behavior: smooth;
 }
 
+
+.form-container {
+    width: 350px;
+    padding: 25px;
+    background-color: #1e1e1e; /* Latar belakang container form */
+    border: 1px solid #333; /* Border tipis abu-abu gelap */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lembut */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #f0f0f0; /* Warna teks label lebih terang */
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.radio-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-group .radio-label {
+    position: relative;
+    padding: 15px 20px 15px 45px;
+    background-color: #282828; /* Latar belakang pilihan radio */
+    border: 1px solid #444; /* Border tipis abu-abu */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.0em;
+    color: #e0e0e0; /* Warna teks abu-abu terang */
+    transition: all 0.2s ease;
+}
+
+/* Style untuk lingkaran radio button kustom */
+.radio-group .radio-label::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999; /* Border lingkaran abu-abu medium */
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+/* Style untuk titik di dalam lingkaran saat radio button terpilih */
+.radio-group .radio-label::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 10px;
+    height: 10px;
+    background-color: #e55a5a; /* Warna titik putih/abu-abu terang */
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+/* Saat radio button di-hover */
+.radio-group input[type="radio"]:hover + .radio-label {
+    background-color: #333; /* Lebih terang saat hover */
+    border-color: #666; /* Border sedikit lebih terang */
+}
+
+/* Saat radio button terpilih (checked) */
+.radio-group input[type="radio"]:checked + .radio-label {
+    background-color: #333; /* Latar belakang saat terpilih */
+    border-color: #e0e0e0; /* Border putih/abu-abu terang saat terpilih */
+}
+
+/* Animasi titik saat radio button terpilih */
+.radio-group input[type="radio"]:checked + .radio-label::after {
+    transform: translateY(-50%) scale(1);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
