@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let whatsappMessage = "Permisi, saya ingin memesan Berikut Detail Pesananya:\n\n";
+        let whatsappMessage = "Permisi, saya ingin Memesan, Berikut Detail Pesananya:\n\n";
         whatsappMessage += `Nama: ${customerName}\n`;
         whatsappMessage += `Pengambilan: ${deliveryOption === 'antar' ? 'Diantar' : 'Ambil di Warung'}\n`;
         if (deliveryOption === 'antar') {
