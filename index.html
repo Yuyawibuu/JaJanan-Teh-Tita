@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jajanan Pedas Teh Tita - Rasa Modern dan Gurih!</title>
+    <meta name="description" content="Jual corndog keju meleleh, cipak, seblak, cimol bojot, basreng, dan mie jebew paling enak di Bandung. Pesan online sekarang!">
+    <meta name="keywords" content="corndog bandung, cipak bandung, seblak bandung, cimol bojot, basreng cobek, mie jebew, jajanan bandung, makanan pedas, mozarella, cemilan enak">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Jajanan Pedas Teh Tita</a>
+            <nav>
+                <ul>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#order-form-section">Pesan Sekarang</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="openCart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu-section" class="main-content-area">
+            <div class="container">
+                <div class="intro-header fade-in">
+                    <h1>Cicipi Kelezatan <br> Cemilan Pedas Kekinian!</h1>
+                    <p>Perpaduan sempurna antara renyah, kenyal, dan gurih, dibuat dengan cinta untuk Anda.</p>
+                  
+                    <h2>Pilihan Menu Favorit</h2>
+                </div>
+
+                <div class="menu-filter-search">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Semua</button>
+                        <button class="filter-btn" data-filter="corndog">Corndog</button>
+                        <button class="filter-btn" data-filter="cipak">Cipak</button>
+                        <button class="filter-btn" data-filter="seblak">Seblak</button>
+                        <button class="filter-btn" data-filter="cimol">Cimol</button>
+                        <button class="filter-btn" data-filter="basreng">Basreng</button>
+                        <button class="filter-btn" data-filter="mie">Mie Jebew</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="menuSearchInput" placeholder="Cari menu...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="order-form-section" class="order-form-section">
+            <div class="container">
+                <h2>Formulir Pesanan</h2>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="customerName">📄Nama Kamu:</label>
+                        <input type="text" id="customerName" placeholder="Nama Kamu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>📌Pilihan Pengambilan:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="deliveryOptionDeliver" name="deliveryOption" value="antar" checked>
+                            <label for="deliveryOptionDeliver">🛵Diantar</label>
+
+                            <input type="radio" id="deliveryOptionPickup" name="deliveryOption" value="pickup">
+                            <label for="deliveryOptionPickup">👩‍🍳Ambil di Warung</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="addressGroup">
+                        <label for="deliveryAddress">📍Alamat Lengkap (Jika Diantar):</label>
+                        <textarea id="deliveryAddress" rows="4" placeholder="Jalan, Nomor Rumah, RT/RW, Warna Cat Rumah"></textarea>
+                    </div>
+                    <button id="checkoutBtn" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+                    <p class="form-instruction">
+                        *Detail pesanan (item dan total harga) akan diambil dari keranjang Anda saat checkout via WhatsApp.
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Kami adalah penyedia hidangan cemilan premium, berkomitmen untuk menyajikan rasa terbaik dengan bahan-bahan segar pilihan. Setiap produk kami dibuat dengan standar kebersihan tertinggi dan sentuhan inovasi untuk pengalaman kuliner yang tak terlupakan.</p>
+                <p>Mulai dari renyahnya corndog keju mozarella yang meleleh, kenyalnya cipak dan cimol bojot, hingga pedasnya seblak, basreng, dan mie jebew, kami hadir untuk memanjakan lidah Anda. Rasakan bedanya, rasakan kelezatannya!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <div class="contact-info">
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/62895386863049" target="_blank">0895386863049</a></p>
+                    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/corndogcemilandelights" target="_blank">@corndogcemilandelights</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Lezat No. 789, Kota Rasa, Bandung</p>
+                    <p class="working-hours"><i class="fas fa-clock"></i> Buka Setiap Hari: 10.00 - 21.00 WIB</p>
+                </div>
+                <div class="social-media-links">
+                    <a href="https://facebook.com/corndogcemilandelights" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/corndogcemilandelights" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jajanan Pedas Teh Tita. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close-btn" id="closeCart">&times;</span>
+            <h3>Keranjang Belanja Anda</h3>
+            <ul id="modal-cart-list">
+                </ul>
+            <div class="cart-summary-modal">
+                <p>Total: <span id="modal-cart-total">Rp 0</span></p>
+                <button id="checkoutBtn" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toastNotification" class="toast-notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
