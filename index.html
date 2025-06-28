@@ -64,36 +64,37 @@
             </div>
         </section>
 
-        <section id="order-form-section" class="order-form-section">
-            <div class="container">
-                <h2>Formulir Pesanan</h2>
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label for="customerName">📄Nama Kamu:</label>
-                        <input type="text" id="customerName" placeholder="Nama Kamu" required>
-                    </div>
-
-                    <div class="form-group">
-            <label class="form-label">📌Pilihan Pengambilan:</label>
-            <div class="radio-group">
-                <input type="radio" id="deliveryOptionDeliver" name="deliveryOption" value="antar" checked>
-                <label for="deliveryOptionDeliver" class="radio-label">🛵Diantar</label>
-
-                <input type="radio" id="deliveryOptionPickup" name="deliveryOption" value="pickup">
-                <label for="deliveryOptionPickup" class="radio-label">👩‍🍳Ambil di Warung</label>
+<section id="order-form-section" class="order-form-section">
+    <div class="container">
+        <h2>Formulir Pesanan</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="customerName">📄Nama Kamu:</label>
+                <input type="text" id="customerName" placeholder="Nama Kamu" required>
             </div>
 
-                    <div class="form-group" id="addressGroup">
-                        <label for="deliveryAddress">📍Alamat Lengkap (Jika Diantar):</label>
-                        <textarea id="deliveryAddress" rows="4" placeholder="Jalan, Nomor Rumah, RT/RW, Warna Cat Rumah"></textarea>
-                    </div>
-                    <button id="checkoutBtn" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
-                    <p class="form-instruction">
-                        *Detail pesanan (item dan total harga) akan diambil dari keranjang Anda saat checkout via WhatsApp.
-                    </p>
-                </form>
+            <div class="form-group">
+                <label class="form-label">📌Pilihan Pengambilan:</label>
+                <div class="radio-group">
+                    <input type="radio" id="deliveryOptionDeliver" name="deliveryOption" value="antar" checked>
+                    <label for="deliveryOptionDeliver" class="radio-label">🛵Diantar</label>
+
+                    <input type="radio" id="deliveryOptionPickup" name="deliveryOption" value="pickup">
+                    <label for="deliveryOptionPickup" class="radio-label">👩‍🍳Ambil di Warung</label>
+                </div>
             </div>
-        </section>
+
+            <div class="form-group" id="addressGroup">
+                <label for="deliveryAddress">📍Alamat Lengkap (Jika Diantar):</label>
+                <textarea id="deliveryAddress" rows="4" placeholder="Jalan, Nomor Rumah, RT/RW, Warna Cat Rumah"></textarea>
+            </div>
+            <button id="whatsappCheckoutButton" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+            <p class="form-instruction">
+                *Detail pesanan (item dan total harga) akan diambil dari keranjang Anda saat checkout via WhatsApp.
+            </p>
+        </form>
+    </div>
+</section>
         <section id="about" class="about-section">
             <div class="container">
                 <h2>Tentang Kami</h2>
@@ -133,8 +134,8 @@
                 </ul>
             <div class="cart-summary-modal">
                 <p>Total: <span id="modal-cart-total">Rp 0</span></p>
-              <a href="#order-form-section" style="text-decoration: none;">
-    <button id="checkoutBtn" class="btn primary-btn" style="cursor: pointer;">
+              <a href="#order-form-section">
+    <button class="btn primary-btn">
         <i class="fas fa-map-marker-alt"></i> Checkout
     </button>
 </a>
